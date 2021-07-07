@@ -196,7 +196,7 @@ task) may write to the task.pending file at the same time.
 .B gc=1
 Can be used to temporarily suspend garbage collection (gc), so that task IDs
 don't change. Note that this should be used in the form of a command line
-override (task rc.gc=0 ...), and not permanently used in the \fI.taskrc\fR file,
+override (\fBtask rc.gc=0 ...\fR), and not permanently used in the \fI.taskrc\fR file,
 as this significantly affects performance in the long term.
 
 .TP
