@@ -189,7 +189,7 @@ This is a path to the hook scripts directory. By default it is \fI~/.task/hooks\
 Determines whether to use file locking when accessing the pending.data and
 completed.data files. Defaults to "1". Solaris users who store the data
 files on an NFS mount may need to set locking to "0". Note that there is
-danger in setting this value to "0" - another program (or another instance of
+danger in setting this value to "0" \- another program (or another instance of
 task) may write to the task.pending file at the same time.
 
 .TP
@@ -824,7 +824,7 @@ terminal, can be obtained by running the command:
 .RE
 
 .RS
-Note that no default values are listed here - the defaults now correspond to the
+Note that no default values are listed here \- the defaults now correspond to the
 \fIdark-256.theme\fR (Linux) and \fIdark-16.theme (other) theme values.
 The coloration rules are as follows:
 .RE

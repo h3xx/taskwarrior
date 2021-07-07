@@ -42,7 +42,7 @@ The output cannot be replicated here in a man page, but you should see a set of
 color samples.  How many you see depends on your terminal program's ability to
 render them.
 
-You should at least see the Basic colors and Effects - if you do, then you have
+You should at least see the Basic colors and Effects \- if you do, then you have
 16-color support.  If your terminal supports 256 colors, you'll know it!
 
 .SH 16-COLOR SUPPORT
@@ -72,7 +72,7 @@ The order of the words is not important, so the following are equivalent:
     bold green
     green bold
 
-But the 'on' is important - colors before the 'on' are foreground, and colors
+But the 'on' is important \- colors before the 'on' are foreground, and colors
 after 'on' are background.
 
 There is an additional 'underline' attribute that may be used:
@@ -110,9 +110,9 @@ which is like this:
     color255
 
 This gives you access to all 256 colors, but doesn't help you much.  This range
-is a combination of 8 basic colors (color0 - color7), then 8 brighter variations
-(color8 - color15).  Then a block of 216 colors (color16 - color231).  Then a
-block of 24 gray colors (color232 - color255).
+is a combination of 8 basic colors (color0 \- color7), then 8 brighter variations
+(color8 \- color15).  Then a block of 216 colors (color16 \- color231).  Then a
+block of 24 gray colors (color232 \- color255).
 
 The large block of 216 colors (6x6x6 = 216) represents a color cube, which can
 be addressed via RGB values from 0 to 5 for each component color.  A value of 0
@@ -132,7 +132,7 @@ with no green and no blue yields red.  Similarly, blue and green are:
     rgb005
     rgb050
 
-Another example - bright yellow - is a mix of bright red and bright green, but
+Another example \- bright yellow \- is a mix of bright red and bright green, but
 no blue component, so bright yellow is addressed as:
 
     rgb550
@@ -151,7 +151,7 @@ have a red value of 5.  Within each square, blue ranges from 0 to 5 left to
 right, and within each square green ranges from 0 to 5, top to bottom.  This
 scheme takes some getting used to.
 
-The block of 24 gray colors can also be accessed as gray0 - gray23, in a
+The block of 24 gray colors can also be accessed as gray0 \- gray23, in a
 continuous ramp from black to white.
 
 .SH MIXING 16- AND 256-COLORS
@@ -160,7 +160,7 @@ If you specify 16-colors, and view on a 256-color terminal, no problem.  If you
 try the reverse, specifying 256-colors and viewing on a 16-color terminal, you
 will be disappointed, perhaps even appalled.
 
-There is some limited color mapping - for example, if you were to specify this
+There is some limited color mapping \- for example, if you were to specify this
 combination:
 
     red on gray3

@@ -551,7 +551,7 @@ This is a workaround to avoid a recurrence bug that duplicates recurring tasks.
 .TP
 .B task <filter> tags
 Show a list of all tags used. Any special tags used are highlighted. Note that
-virtual tags are not listed - they don't really exist, and are just a convenient
+virtual tags are not listed \- they don't really exist, and are just a convenient
 notation for other task metadata. It is an error to attempt to add or remove a
 virtual tag.
 
@@ -698,7 +698,7 @@ task 1,4-10,19 delete
 
 .TP
 .B +tag|-tag
-Tags are arbitrary words associated with a task. Use + to add a tag and - to
+Tags are arbitrary words associated with a task. Use + to add a tag and \- to
 remove a tag from a task. A task can have any quantity of tags.
 
 Certain tags (called 'special tags'), can be used to affect the way tasks are
@@ -978,7 +978,7 @@ The implied 'and' operator makes it:
 
   task status:pending and project:Home or project:Garden list
 
-This is a precedence error - the 'and' and 'or' need to be grouped using
+This is a precedence error \- the 'and' and 'or' need to be grouped using
 parentheses, like this:
 
   task status:pending and ( project:Home or project:Garden ) list
@@ -1310,7 +1310,7 @@ this man page.
 
 .TP
 .I ~/.taskrc
-User configuration file - see also taskrc(5).  Note that this can be
+User configuration file \- see also taskrc(5).  Note that this can be
 overridden on the command line or by the TASKRC environment variable.
 
 .TP

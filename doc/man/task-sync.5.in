@@ -32,17 +32,17 @@ a 'push'.
 
 Strengths:
 .br
-  - Good data transport mechanisms
+  \- Good data transport mechanisms
 .br
-  - Secure transport options
+  \- Secure transport options
 
 Weaknesses:
 .br
-  - You need proficiency with VCS tools
+  \- You need proficiency with VCS tools
 .br
-  - You will need to manually resolve conflicts frequently
+  \- You will need to manually resolve conflicts frequently
 .br
-  - You need to provide the mechanism for making sure copies are up to date
+  \- You need to provide the mechanism for making sure copies are up to date
 
 
 .SH OPTION 2: FILE SHARING SERVICES
@@ -63,15 +63,15 @@ configuration variable like this:
 
 Strengths:
 .br
-  - Good client support
+  \- Good client support
 .br
-  - Easy setup
+  \- Easy setup
 .br
-  - Transparent use
+  \- Transparent use
 
 Weaknesses:
 .br
-  - Tasks are not properly merged
+  \- Tasks are not properly merged
 
 
 .SH OPTION 3: TASKSERVER
@@ -84,7 +84,7 @@ is installed), and with a server account and client configuration, syncing is
 done on demand.
 
 Setup is a matter of creating an account on a Taskserver (see your Taskserver
-provider or operate your own - see
+provider or operate your own \- see
 https://taskwarrior.org/docs/taskserver/setup.html)
 
 Once you have an account, you'll receive a certificate, key, and credentials.
@@ -136,15 +136,15 @@ This protects you against the effects of a sync/duplication bug.
 
 Strengths:
 .br
-  - Secure communication
+  \- Secure communication
 .br
-  - Minimal bandwidth
+  \- Minimal bandwidth
 .br
-  - Tolerates connectivity outage
+  \- Tolerates connectivity outage
 
 Weaknesses:
 .br
-  - You need to manage your own server, or gain access to a hosted server.
+  \- You need to manage your own server, or gain access to a hosted server.
 
 .SH "CREDITS & COPYRIGHTS"
 Copyright (C) 2006 \- 2021 P. Beckingham, F. Hernandez.
