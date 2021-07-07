@@ -55,7 +55,7 @@ default, sample
 .I .taskrc
 file in the user's home directory.
 
-The .taskrc file follows a very simple syntax defining name/value pairs:
+The \fI.taskrc\fR file follows a very simple syntax defining name/value pairs:
 
 .RS
 <name> = <value>
@@ -88,8 +88,8 @@ A comment consists of the character '#', and extends from the '#' to the end
 of the line. There is no way to comment a multi-line block. There may be
 blank lines.
 
-Almost every value has a default setting, and an empty .taskrc file is one
-that makes use of every default. The contents of the .taskrc file therefore
+Almost every value has a default setting, and an empty \fI.taskrc\fR file is one
+that makes use of every default. The contents of the \fI.taskrc\fR file therefore
 represent overrides of the default values. To remove a default value completely
 there must be an entry like this:
 
@@ -100,8 +100,8 @@ there must be an entry like this:
 This entry overrides the default value with a blank value.
 
 .SH EDITING
-You can edit your .taskrc file by hand if you wish, or you can use the 'config'
-command. To permanently set a value in your .taskrc file, use this command:
+You can edit your \fI.taskrc\fR file by hand if you wish, or you can use the 'config'
+command. To permanently set a value in your \fI.taskrc\fR file, use this command:
 
 .RS
 $ task config nag "You have more urgent tasks."
@@ -172,7 +172,7 @@ Valid variable names and their default values are:
 .TP
 .B data.location=$HOME/.task
 This is a path to the directory containing all the Taskwarrior files. By
-default, it is set up to be ~/.task, for example: /home/paul/.task
+default, it is set up to be \fI~/.task\fR, for example: \fI/home/paul/.task\fR
 
 Note that you can use the
 .B ~
@@ -182,7 +182,7 @@ Note that the TASKDATA environment variable overrides this setting.
 
 .TP
 .B hooks.location=$HOME/.task/hooks
-This is a path to the hook scripts directory. By default it is ~/.task/hooks.
+This is a path to the hook scripts directory. By default it is \fI~/.task/hooks\fR.
 
 .TP
 .B locking=1
@@ -196,7 +196,7 @@ task) may write to the task.pending file at the same time.
 .B gc=1
 Can be used to temporarily suspend garbage collection (gc), so that task IDs
 don't change. Note that this should be used in the form of a command line
-override (task rc.gc=0 ...), and not permanently used in the .taskrc file,
+override (task rc.gc=0 ...), and not permanently used in the \fI.taskrc\fR file,
 as this significantly affects performance in the long term.
 
 .TP
@@ -206,7 +206,7 @@ is '1', but certain extensions and environments may need to disable hooks.
 
 .TP
 .B exit.on.missing.db=0
-When set to '1' causes the program to exit if the database (~/.task or
+When set to '1' causes the program to exit if the database (\fI~/.task\fR or
 rc.data.location or TASKDATA override) is missing. Default value is '0'.
 
 .SS TERMINAL
@@ -267,7 +267,7 @@ Alternatively, you can specify a comma-separated list of verbosity tokens that
 control specific occasions when output is generated. This list may contain:
 
     blank      Inserts extra blank lines in output, for clarity
-    header     Messages that appear before report output (this includes .taskrc/.task overrides and the "[task next]" message)
+    header     Messages that appear before report output (this includes \fI.taskrc\fR/\fI.task\fR overrides and the "[task next]" message)
     footnote   Messages that appear after report output (mostly status messages and change descriptions)
     label      Column labels on tabular reports
     new-id     Provides feedback of any new task IDs
@@ -738,8 +738,8 @@ When enabled, this setting causes a change log of each task to be displayed by
 the 'info' command. Default value is "1".
 
 .SS HOLIDAYS
-Holidays are entered either directly in the .taskrc file or via an include file
-that is specified in .taskrc. For each holiday the name and the date is
+Holidays are entered either directly in the \fI.taskrc\fR file or via an include file
+that is specified in \fI.taskrc\fR. For each holiday the name and the date is
 required to be given:
 
 .RS
@@ -825,7 +825,7 @@ terminal, can be obtained by running the command:
 
 .RS
 Note that no default values are listed here - the defaults now correspond to the
-dark-256.theme (Linux) and dark-16.theme (other) theme values.
+\fIdark-256.theme\fR (Linux) and \fIdark-16.theme (other) theme values.
 The coloration rules are as follows:
 .RE
 

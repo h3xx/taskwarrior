@@ -24,7 +24,7 @@ There are several good, distributed VCS systems (git, hg, ...) and centralized
 VCS systems (svn, cvs ...), and they all function in a similar fashion for our
 purposes.
 
-Setup is straightforward.  You place your .task directory under revision
+Setup is straightforward.  You place your \fI.task\fR directory under revision
 control.  You then need to perform a regular commit/push/pull/update to make
 sure that the data is propagated when needed.  You can even do this using shell
 scripts so that every task command is preceded by a 'pull' and followed by
@@ -47,7 +47,7 @@ Weaknesses:
 
 .SH OPTION 2: FILE SHARING SERVICES
 There are many file sharing services, such as DropBox, Amazon S3, Google Drive,
-SkyDrive and more.  This technique involves storing your .task directory in a
+SkyDrive and more.  This technique involves storing your \fI.task\fR directory in a
 shared directory under the control of the file hosting services.
 
 Syncing happens quickly, although it is possible to run into conflict situations
