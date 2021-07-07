@@ -1,3 +1,9 @@
+.de FN
+.I "\\$1"
+..
+.de FNR
+.IR "\\$1" "\\$2" "\\$3" "\\$4" "\\$5" "\\$6"
+..
 .TH task-color 5 2016-02-24 "${PACKAGE_STRING}" "User Manuals"
 
 .SH NAME
@@ -172,8 +178,9 @@ Note also that there is no bold or bright attributes when dealing with 256
 colors, but there is still underline available.
 
 .SH LEGEND
-Taskwarrior will show examples of all defined colors used in your \fI.taskrc\fR, or
-theme, if you run this command:
+Taskwarrior will show examples of all defined colors used in your
+.FNR .taskrc ,
+or theme, if you run this command:
 
     $ task color legend
 
@@ -195,7 +202,9 @@ project:
     $ task config color.project.Home 'on blue'
 
 We use quotes around 'on blue' because there are two words, but they represent
-one value in the \fI.taskrc\fR file.  Now suppose we wish to use a bold yellow text
+one value in the
+.FN .taskrc
+file.  Now suppose we wish to use a bold yellow text
 color for all cleaning work:
 
     $ task config color.keyword.clean 'bold yellow'
@@ -232,11 +241,15 @@ specifically represent missing data.
 
 .SH THEMES
 Taskwarrior supports themes.  What this really means is that with the ability to
-include other files into the \fI.taskrc\fR file, different sets of color rules can
+include other files into the
+.FN .taskrc
+file, different sets of color rules can
 be included.
 
 To get a good idea of what a color theme looks like, try adding this entry to
-your \fI.taskrc\fR file (note that your installation may use a slightly different path
+your
+.FN .taskrc
+file (note that your installation may use a slightly different path
 from the example):
 
 .RS
