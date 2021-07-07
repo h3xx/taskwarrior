@@ -746,8 +746,8 @@ are:
 
 .\" If you update the above list, update src/commands/CmdInfo.cpp and src/commands/CmdTags.cpp as well.
 
-You can use +BLOCKED to filter blocked tasks, or -BLOCKED for unblocked tasks.
-Similarly, -BLOCKED is equivalent to +UNBLOCKED. It is an error to attempt to
+You can use +BLOCKED to filter blocked tasks, or \-BLOCKED for unblocked tasks.
+Similarly, \-BLOCKED is equivalent to +UNBLOCKED. It is an error to attempt to
 add or remove a virtual tag.
 
 .TP

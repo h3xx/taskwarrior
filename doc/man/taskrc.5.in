@@ -524,7 +524,7 @@ Default value is '0'.
 .B alias.rm=delete
 Taskwarrior supports command aliases. This alias provides an alternate name
 (rm) for the delete command. You can use aliases to provide alternate names for
-any of the commands. Several commands you may use are actually aliases -
+any of the commands. Several commands you may use are actually aliases \-
 the 'history' report, for example, or 'export'.
 
 .SS DATES
